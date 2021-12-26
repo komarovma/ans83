@@ -1,0 +1,7 @@
+path.data: /var/lib/kibana
+path.logs: /var/log/kibana
+network.host: 0.0.0.0
+discovery.seed_hosts: ["{{ ansible_facts['default_ipv4']['address'] }}"]
+node.name: node-a
+cluster.initial_master_nodes: 
+   - node-a
